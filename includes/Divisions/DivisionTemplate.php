@@ -1,7 +1,7 @@
-<html dir="rtl">
+<html >
 
 <h4>
-     מיטות פעילות
+     Active beds
 </h4>
 <br> 
 

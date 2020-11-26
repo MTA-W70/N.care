@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html dir="rtl">
+<html >
 		<head>
-		<title>SET NEW DIVISION</title>
+		<title>Manage therapists</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 						<link rel="stylesheet" type="text/css" href="../css/Payment.css">
 			 <meta charset="utf-8" />
@@ -9,15 +9,14 @@
 
 
 
-<h1 style="text-align:center">ניהול מטפלים</h1><br>
+<h1 style="text-align:center">Manage therapists</h1><br>
 
 
-<a style = "font-size:15px;  color: black; display = none;" href="SetNewTherapist.php" >צור מטפל/ת חדש/ה</a><br><br>
+<a style = "font-size:15px;  color: black; display = none;" href="SetNewTherapist.php" >Create new therpaist</a><br><br>
 
 
 <h4>
-     מטפלים פעילים
-</h4>
+Active therapists</h4>
 <br> 
 
 <?php

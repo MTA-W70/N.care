@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html dir="rtl">
+<html >
 		<head>
-		<title>SET NEW DIVISION</title>
+		<title>Manage Divisions</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 						<link rel="stylesheet" type="text/css" href="../css/Payment.css">
 			 <meta charset="utf-8" />
@@ -9,15 +9,14 @@
 
 
 
-<h1 style="text-align:center">ניהול מחלקות</h1><br>
+<h1 style="text-align:center">Mange Divisions</h1><br>
 
 
-<a style = "font-size:15px;  color: black; display = none;" href="SetNewDivision.php" >צור מחלקה חדשה</a><br><br>
+<a style = "text-align:center; font-size:15px;  color: black; display = none;" href="SetNewDivision.php" >Create new division</a><br><br>
 
 
-<h4>
-     מחלקות פעילות
-</h4>
+<h4 style="text-align:center">
+Active Divisions:</h4>
 <br> 
 
 <?php
@@ -38,7 +37,7 @@ $sql = " SELECT Division_name from DIVISION  where  Status = 'Active'";
  if($result->num_rows >0 )  
  {while($row =$result->fetch_assoc())
  
-    echo " <a style = 'font-size:15px;  color: black;' href='".$row["Division_name" ]."/DivisionTemplate.php'>".$row["Division_name" ]."</a>";
+    echo " <a style = 'font-size:15px;  text-align:center; color: red;' href='".$row["Division_name" ]."/DivisionTemplate.php'>".$row["Division_name" ]."</a><br> ";
      
 
  }
