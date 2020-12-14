@@ -23,8 +23,12 @@ echo "<h1>error !! </h1>";
 
 $Requesttype=$_REQUEST['RequestType'];
 $sql = "INSERT INTO REQUESTS VALUES ('".$Requesttype."')";
-$Requesttype=$_REQUEST['RequestType'];
-$sql = "INSERT INTO REQUESTS VALUES ('".$Requesttype."')";
+$curBed_number=$_REQUEST['curBed_number'];
+$sql = "INSERT INTO REQUESTS VALUES ('".$Bed_number."')";
+$curRoom_number=$_REQUEST['curRoom_number'];
+$sql = "INSERT INTO REQUESTS VALUES ('".$Room_number."')";
+$curDiv_number=$_REQUEST['curDiv_number'];
+$sql = "INSERT INTO REQUESTS VALUES ('".$Div_number."')";
 
 /*Check creation*/
 
