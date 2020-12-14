@@ -23,7 +23,8 @@ echo "<h1>error !! </h1>";
 
 $Requesttype=$_REQUEST['RequestType'];
 $sql = "INSERT INTO REQUESTS VALUES ('".$Requesttype."')";
-
+$Requesttype=$_REQUEST['RequestType'];
+$sql = "INSERT INTO REQUESTS VALUES ('".$Requesttype."')";
 
 /*Check creation*/
 
