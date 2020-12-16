@@ -43,7 +43,7 @@ for($i=1; $i< $RoomsNumber+1;$i++){
 
         for($j=1; $j<$BedsNumber+1;$j++){
             shell_exec("cd ../..;cd Patient_entrance; cd ". $DivisionName.";cd room".$i.";mkdir bed".$j);
-            QRcode::png("http://royin.mtacloud.co.il/includes/Patient_entrance/".$DivisionName ."/room".$i."/bed".$j, "bed".$j.".png", "L", 4, 4);
+            QRcode::png("http://royin.mtacloud.co.il/includes/Patient_entrance/".$DivisionName ."/room".$i."/bed".$j, "bed".$j."/PatientRedirect.html.png", "L", 4, 4);
             shell_exec("mv bed".$j.".png /home/royin/public_html/includes/Patient_entrance/". $DivisionName ."/room".$i."/bed".$j);
             /*shell_exec("cp bed".$j.".png ". $DivisionName ."/room".$i."/bed".$j);*/
             $sql = "INSERT INTO BEDS VALUES ('".$DivisionName."', '".$i."', '".$j."','http://royin.mtacloud.co.il/includes/Patient_entrance/".$DivisionName.
