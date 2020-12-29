@@ -35,5 +35,7 @@ include "divisionName.php";
 
 
 ?>
-
+<body>
+ <a style = "font-size:15px;  color: black; display = none;" href="ManageDivisions.php" >Back to manage divisions</a>
+</body>
 </html>
