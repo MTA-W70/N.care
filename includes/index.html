@@ -9,11 +9,46 @@
 
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-
-		</head>
+<!-- JQuery -->
+<script src="jquery-3.5.1.min.js"></script> 
+<!-- End JQuery  --> 
+     
+</head>			
 
 
 <body>
+
+<!-- Header to be uploaded from server - Michael the Header.html should be located in the server-->
+<header>
+    <div id="header-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#header-placeholder").load("Header.html");
+    });
+    </script>
+
+</header>
+<!-- End Header  -->
+		</head>
+
+
+<main>
+<!-- Nav bar JQuery load - NavAdmin.html should be located in the server-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("Nav.html");
+    });
+    </script>
+<!--end of Navigation bar-->
+
+<!--Start main-->
 <div class="container">
 <div class="jumbotron text-center">
   <h1>Welcome to N.care</h1>
@@ -26,8 +61,8 @@
 <div class="card" style="width: 18rem;">
   <img src="./Divisions/588hospital_1007781.png" class="card-img-top" alt="image">
   <div class="card-body">
-    <h5 class="card-title">For creating a new hospital division</h5>
-    <a class="btn btn-primary"href="Divisions/ManageDivisions.php" >New divisions</a>
+    <h5 class="card-title">Manage divisions</h5>
+    <a class="btn btn-primary"href="Divisions/ManageDivisions.php" >Go</a>
   </div>
 </div>
 
@@ -37,8 +72,8 @@
 <div class="card" style="width: 18rem;">
   <img src="./Divisions/free-nurse-icon-3960-thumb.png" class="card-img-top" alt="image">
   <div class="card-body">
-    <h5 class="card-title">For entering therapist to your shift</h5>
-    <a class="btn btn-primary"href="Therapists/ManageTherapists.php" >New therapists</a>
+    <h5 class="card-title">Manage Therapists</h5>
+    <a class="btn btn-primary"href="Therapists/ManageTherapists.php" >Go</a>
   </div>
 </div>
 </div>
@@ -46,6 +81,22 @@
 </div>
 
 </div>
+</main>
+<!--End main-->
+
+<!-- Footer to be uploaded from server - Michael the Footer.html should be located in the server -->
+<footer>
+    <div id="footer-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#footer-placeholder").load("Footer.html");
+    });
+    </script>
+</footer>
+<!-- End Footer  -->
 
 </body>
 
