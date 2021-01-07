@@ -14,6 +14,9 @@
 
 <a style = "font-size:15px;  color: black; display = none;" href="SetNewTherapist.php" >Create new therpaist</a><br><br>
 
+<a style = "font-size:15px;  color: black; display = none;" href="EditTherapist.php" >Edit therpaists</a><br><br>
+
+
 
 <h4>
 Active therapists</h4>
